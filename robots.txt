@@ -1,1 +1,1 @@
-Sitemap: https://spa-github-pages.rafgraph.dev/sitemap.txt
+Sitemap: https://01zulfi.github.io/journal
