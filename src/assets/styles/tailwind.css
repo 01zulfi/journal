@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@layer base {
+  html {
+    @apply bg-bg-primary text-fg-primary;
+    font-family: 'Rubik', sans-serif;
+  }
+  #root {
+    @apply mx-2 sm:ml-10 sm:mr-40;
+  }
+}
+
+.blinking-cursor {
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background: transparent;
+  }
+  50% {
+    @apply bg-gradient-to-t from-fg-green to-fg-cyan;
+  }
+}

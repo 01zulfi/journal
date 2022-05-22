@@ -423,6 +423,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+html {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 7 11 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(143 155 168 / var(--tw-text-opacity));
+  font-family: 'Rubik', sans-serif;
+}
+
+#root {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  #root {
+    margin-left: 2.5rem;
+    margin-right: 10rem;
+  }
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -468,15 +488,94 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.m-4 {
-  margin: 1rem;
+.flex {
+  display: flex;
 }
 
-.font-bold {
-  font-weight: 700;
+.w-\[10px\] {
+  width: 10px;
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.bg-gradient-to-l {
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+.from-fg-green {
+  --tw-gradient-from: #50fa7b;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(80 250 123 / 0));
+}
+
+.to-fg-cyan {
+  --tw-gradient-to: #80ffea;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.blinking-cursor {
+  -webkit-animation: 1s blink step-end infinite;
+          animation: 1s blink step-end infinite;
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    background: transparent;
+  }
+
+  50% {
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+    --tw-gradient-from: #50fa7b;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(80 250 123 / 0));
+    --tw-gradient-to: #80ffea;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    background: transparent;
+  }
+
+  50% {
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+    --tw-gradient-from: #50fa7b;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(80 250 123 / 0));
+    --tw-gradient-to: #80ffea;
+  }
 }
