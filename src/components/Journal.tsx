@@ -1,6 +1,7 @@
 import React, { FC, useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
+import formatDate from '../utils/format-date';
 
 const Journal: FC = function Journal() {
   const params = useParams();
@@ -38,7 +39,7 @@ const Journal: FC = function Journal() {
     <article>
       <Link to="/">Back to Home</Link>
       <h2>{journal.title}</h2>
-      <p>{journal.createdAt}</p>
+      <p>{formatDate(journal.createdAt)}</p>
       <ReactMarkdown>{journal.content}</ReactMarkdown>
     </article>
   );

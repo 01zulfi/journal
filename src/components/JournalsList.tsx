@@ -1,6 +1,7 @@
 import React, { FC, useState, useEffect } from 'react';
 import JournalInterface from '../interfaces/journal';
 import { Link } from 'react-router-dom';
+import formatDate from '../utils/format-date';
 
 const JournalsList: FC = function JournalsList() {
   const [journals, setJournals] = useState<JournalInterface[]>([]);
@@ -41,12 +42,7 @@ const JournalsList: FC = function JournalsList() {
           <h2>
             <Link to={journal.urlName}>{journal.title}</Link>
           </h2>
-          <p>
-            {(() => {
-              const date = new Date(journal.createdAt);
-              return date.toDateString();
-            })()}
-          </p>
+          <p>{formatDate(journal.createdAt)}</p>
         </div>
       ))}
     </section>
