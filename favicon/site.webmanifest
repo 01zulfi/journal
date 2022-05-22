@@ -1,13 +1,11 @@
 {
-    "name": "spa-github-pages",
-    "icons": [
-        {
-            "src": "/favicon/green-grid-144-168-192-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#000000",
-    "background_color": "#007800",
-    "display": "browser"
+  "name": "zulfi's journal",
+  "icons": [
+    {
+      "src": "/favicon/sticky-note.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "display": "browser"
 }
