@@ -24,7 +24,7 @@ const Journal: FC = function Journal() {
       setErrorMessage(data.message);
       setIsLoading(false);
     })();
-  }, []);
+  }, [params.urlName]);
 
   if (isLoading) {
     return <p>Loading...</p>;
