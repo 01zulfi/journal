@@ -50,7 +50,7 @@ const JournalsList: FC = function JournalsList() {
               </p>
             </div>
           </Link>
-          <hr className="border-fg-primary opacity-30 my-2" />
+          <hr className="hr" />
         </div>
       ))}
     </section>
