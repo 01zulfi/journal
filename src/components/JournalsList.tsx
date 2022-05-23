@@ -1,4 +1,5 @@
 import React, { FC, useState, useEffect } from 'react';
+import Loading from './Loading';
 import JournalInterface from '../interfaces/journal';
 import { Link } from 'react-router-dom';
 import formatDate from '../utils/format-date';
@@ -28,7 +29,7 @@ const JournalsList: FC = function JournalsList() {
   }, []);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loading></Loading>;
   }
 
   if (errorMessage !== '') {

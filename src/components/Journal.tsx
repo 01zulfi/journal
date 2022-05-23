@@ -1,4 +1,5 @@
 import React, { FC, useState, useEffect } from 'react';
+import Loading from './Loading';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import formatDate from '../utils/format-date';
@@ -28,7 +29,7 @@ const Journal: FC = function Journal() {
   }, [params.urlName]);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loading></Loading>;
   }
 
   if (errorMessage) {

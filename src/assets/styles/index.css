@@ -488,16 +488,57 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .w-\[10px\] {
   width: 10px;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
 .gap-1 {
   gap: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .bg-gradient-to-l {
@@ -516,6 +557,22 @@ html {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.fill-blue-600 {
+  fill: #2563eb;
+}
+
+.fill-fg-primary {
+  fill: #8f9ba8;
+}
+
+.fill-fg-cyan {
+  fill: #80ffea;
+}
+
+.fill-fg-green {
+  fill: #50fa7b;
 }
 
 .py-4 {
@@ -543,6 +600,26 @@ html {
 
 .text-transparent {
   color: transparent;
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-fg-cyan {
+  --tw-text-opacity: 1;
+  color: rgb(128 255 234 / var(--tw-text-opacity));
+}
+
+.text-fg-primary {
+  --tw-text-opacity: 1;
+  color: rgb(143 155 168 / var(--tw-text-opacity));
+}
+
+.text-fg-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(242 242 242 / var(--tw-text-opacity));
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
@@ -577,5 +654,12 @@ html {
     --tw-gradient-from: #50fa7b;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(80 250 123 / 0));
     --tw-gradient-to: #80ffea;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:text-gray-600 {
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
   }
 }
