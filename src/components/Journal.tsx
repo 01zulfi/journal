@@ -1,7 +1,7 @@
 import React, { FC, useState, useEffect } from 'react';
 import Loading from './Loading';
+import JournalContent from './JournalContent';
 import { useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
 import formatDate from '../utils/format-date';
 import setWebpageTitle from '../utils/set-webpage-title';
 
@@ -49,7 +49,7 @@ const Journal: FC = function Journal() {
         {journal.title}
       </h2>
       <p className="italic my-4 mb-8">{formatDate(journal.createdAt)}</p>
-      <ReactMarkdown>{journal.content}</ReactMarkdown>
+      <JournalContent content={journal.content}></JournalContent>
     </article>
   );
 };
