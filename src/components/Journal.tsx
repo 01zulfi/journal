@@ -3,6 +3,7 @@ import Loading from './Loading';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import formatDate from '../utils/format-date';
+import setWebpageTitle from '../utils/set-webpage-title';
 
 const Journal: FC = function Journal() {
   const params = useParams();
@@ -27,6 +28,12 @@ const Journal: FC = function Journal() {
       setIsLoading(false);
     })();
   }, [params.urlName]);
+
+  useEffect(() => {
+    if (!journal.title) return;
+    setWebpageTitle(`${journal.title} | zulfi's journal`);
+    return () => setWebpageTitle("zulfi's journal");
+  });
 
   if (isLoading) {
     return <Loading></Loading>;
