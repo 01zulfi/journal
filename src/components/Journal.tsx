@@ -1,6 +1,6 @@
 import React, { FC, useState, useEffect } from 'react';
 import Loading from './Loading';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import formatDate from '../utils/format-date';
 import setWebpageTitle from '../utils/set-webpage-title';
@@ -36,11 +36,7 @@ const Journal: FC = function Journal() {
   });
 
   if (isLoading) {
-    return (
-      <div className="mt-10">
-        <Loading></Loading>
-      </div>
-    );
+    return <Loading></Loading>;
   }
 
   if (errorMessage) {
@@ -48,18 +44,12 @@ const Journal: FC = function Journal() {
   }
 
   return (
-    <article className="mt-10">
-      <Link to="/" className="link text-fg-cyan opacity-80">
-        Back to Home
-      </Link>
-      <hr className="hr my-4" />
-      <section>
-        <h2 className="text-3xl tracking-wide font-bold text-transparent bg-clip-text bg-gradient-to-t from-purple-300 to-purple-400">
-          {journal.title}
-        </h2>
-        <p className="italic my-4 mb-8">{formatDate(journal.createdAt)}</p>
-        <ReactMarkdown>{journal.content}</ReactMarkdown>
-      </section>
+    <article>
+      <h2 className="text-3xl tracking-wide font-bold text-transparent bg-clip-text bg-gradient-to-t from-purple-300 to-purple-400">
+        {journal.title}
+      </h2>
+      <p className="italic my-4 mb-8">{formatDate(journal.createdAt)}</p>
+      <ReactMarkdown>{journal.content}</ReactMarkdown>
     </article>
   );
 };

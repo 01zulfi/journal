@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import Header from './components/Header';
 import JournalsList from './components/JournalsList';
-import Journal from './components/Journal';
+import JournalPage from './components/JournalPage';
 import { Routes, Route } from 'react-router-dom';
 
 const App: FC = function App() {
@@ -17,7 +17,7 @@ const App: FC = function App() {
             </>
           }
         ></Route>
-        <Route path="/:urlName" element={<Journal />}></Route>
+        <Route path="/:urlName" element={<JournalPage />}></Route>
       </Routes>
     </section>
   );
