@@ -7,9 +7,16 @@ import { Routes, Route } from 'react-router-dom';
 const App: FC = function App() {
   return (
     <section>
-      <Header></Header>
       <Routes>
-        <Route path="/" element={<JournalsList />}></Route>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header></Header>
+              <JournalsList></JournalsList>
+            </>
+          }
+        ></Route>
         <Route path="/:urlName" element={<Journal />}></Route>
       </Routes>
     </section>
