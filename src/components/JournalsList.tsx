@@ -37,13 +37,20 @@ const JournalsList: FC = function JournalsList() {
   }
 
   return (
-    <section>
+    <section className="flex flex-col py-8 w-2/3">
       {journals.map((journal) => (
         <div key={journal._id}>
-          <h2>
-            <Link to={journal.urlName}>{journal.title}</Link>
-          </h2>
-          <p>{formatDate(journal.createdAt)}</p>
+          <Link to={journal.urlName}>
+            <div className="flex justify-between py-6 bg-transparent hover:bg-[rgba(255,255,255,0.07)] rounded px-2">
+              <h2 className="text-fg-secondary text-xl w-2/3">
+                {journal.title}
+              </h2>
+              <p className="italic opacity-90">
+                {formatDate(journal.createdAt)}
+              </p>
+            </div>
+          </Link>
+          <hr className="border-fg-primary opacity-30 my-2" />
         </div>
       ))}
     </section>

@@ -438,8 +438,8 @@ html {
 
 @media (min-width: 640px) {
   #root {
-    margin-left: 2.5rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    width: 66.666667%;
   }
 }
 
@@ -488,12 +488,9 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.inline-block {
-  display: inline-block;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .flex {
@@ -506,6 +503,10 @@ html {
 
 .w-\[10px\] {
   width: 10px;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-8 {
@@ -529,16 +530,29 @@ html {
           animation: spin 1s linear infinite;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded {
+  border-radius: 0.25rem;
 }
 
-.border-4 {
-  border-width: 4px;
+.border-fg-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(143 155 168 / var(--tw-border-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-gradient-to-l {
@@ -559,18 +573,6 @@ html {
           background-clip: text;
 }
 
-.fill-blue-600 {
-  fill: #2563eb;
-}
-
-.fill-fg-primary {
-  fill: #8f9ba8;
-}
-
-.fill-fg-cyan {
-  fill: #80ffea;
-}
-
 .fill-fg-green {
   fill: #50fa7b;
 }
@@ -578,6 +580,26 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .text-4xl {
@@ -590,8 +612,22 @@ html {
   line-height: 2rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-extrabold {
   font-weight: 800;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .tracking-wide {
@@ -602,24 +638,25 @@ html {
   color: transparent;
 }
 
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
-.text-fg-cyan {
-  --tw-text-opacity: 1;
-  color: rgb(128 255 234 / var(--tw-text-opacity));
-}
-
-.text-fg-primary {
-  --tw-text-opacity: 1;
-  color: rgb(143 155 168 / var(--tw-text-opacity));
-}
-
 .text-fg-secondary {
   --tw-text-opacity: 1;
   color: rgb(242 242 242 / var(--tw-text-opacity));
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
@@ -655,6 +692,10 @@ html {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(80 250 123 / 0));
     --tw-gradient-to: #80ffea;
   }
+}
+
+.hover\:bg-\[rgba\(255\2c 255\2c 255\2c 0\.07\)\]:hover {
+  background-color: rgba(255,255,255,0.07);
 }
 
 @media (prefers-color-scheme: dark) {
