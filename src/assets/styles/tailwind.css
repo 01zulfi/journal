@@ -36,3 +36,31 @@
     @apply bg-gradient-to-t from-fg-green to-fg-cyan;
   }
 }
+
+.inline-code {
+  color: rgb(163, 190, 140);
+}
+
+.journal-content h2 {
+  @apply text-fg-secondary text-2xl my-4;
+}
+
+.journal-content h3 {
+  @apply text-fg-secondary text-xl my-4;
+}
+
+.journal-content h4 {
+  @apply text-fg-secondary my-4;
+}
+
+.journal-content a {
+  @apply link;
+}
+
+.journal-content strong {
+  @apply font-bold;
+}
+
+.journal-content em {
+  @apply italic;
+}
