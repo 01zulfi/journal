@@ -28,7 +28,7 @@ const JournalContent: FC<JournalContentProps> = function JournalContent({
                 {...props}
               />
             ) : (
-              <code className={`className inline-code`} {...props}>
+              <code className={`${className} inline-code`} {...props}>
                 {children}
               </code>
             );
