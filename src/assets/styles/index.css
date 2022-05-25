@@ -730,12 +730,12 @@ html {
   }
 }
 
-.inline-code {
-  color: rgb(163, 190, 140);
+.journal-content {
+  margin-bottom: 8rem;
 }
 
 .journal-content h2 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -744,7 +744,7 @@ html {
 }
 
 .journal-content h3 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -757,6 +757,11 @@ html {
   margin-bottom: 1rem;
   --tw-text-opacity: 1;
   color: rgb(242 242 242 / var(--tw-text-opacity));
+}
+
+.journal-content p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .journal-content a {
@@ -777,6 +782,53 @@ html {
 
 .journal-content em {
   font-style: italic;
+}
+
+.journal-content .inline-code {
+  color: rgb(163, 190, 140);
+}
+
+.journal-content ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.journal-content ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+
+.journal-content li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.journal-content li > * {
+  display: inline;
+}
+
+.journal-content img {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-radius: 0.25rem;
+}
+
+.journal-content .highlight-box {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-left-width: 4px;
+  border-color: rgb(143 155 168 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-left-color: rgb(128 255 234 / var(--tw-border-opacity));
+  background-color: rgba(255,255,255,0.04);
+  padding: 0.5rem;
+  padding-left: 1rem;
 }
 
 .hover\:bg-\[rgba\(255\2c 255\2c 255\2c 0\.07\)\]:hover {

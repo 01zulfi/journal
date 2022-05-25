@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import nord from 'react-syntax-highlighter/dist/esm/styles/prism/nord';
 
@@ -14,6 +15,7 @@ const JournalContent: FC<JournalContentProps> = function JournalContent({
     <div className="journal-content">
       <ReactMarkdown
         children={content}
+        rehypePlugins={[rehypeRaw]}
         components={{
           code({ node, inline, className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || '');
