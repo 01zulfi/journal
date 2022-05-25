@@ -432,8 +432,8 @@ html {
 }
 
 #root {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -839,5 +839,11 @@ html {
   .dark\:text-gray-600 {
     --tw-text-opacity: 1;
     color: rgb(75 85 99 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:w-2\/3 {
+    width: 66.666667%;
   }
 }
