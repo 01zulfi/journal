@@ -37,7 +37,7 @@ const JournalsList: FC = function JournalsList() {
   }
 
   return (
-    <section className="flex flex-col py-8 w-2/3">
+    <section className="flex flex-col py-8 sm:w-2/3">
       {journals.map((journal) => (
         <div key={journal._id}>
           <Link to={journal.urlName}>

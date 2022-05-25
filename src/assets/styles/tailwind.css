@@ -10,7 +10,7 @@
     font-family: 'Rubik', sans-serif;
   }
   #root {
-    @apply mx-2 sm:ml-20 sm:w-2/3;
+    @apply mx-4 sm:ml-20 sm:w-2/3;
   }
 }
 
