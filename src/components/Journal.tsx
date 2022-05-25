@@ -45,9 +45,9 @@ const Journal: FC = function Journal() {
 
   return (
     <article>
-      <h2 className="text-3xl tracking-wide font-bold text-transparent bg-clip-text bg-gradient-to-t from-purple-300 to-purple-400">
+      <h1 className="text-3xl tracking-wide font-bold text-transparent bg-clip-text bg-gradient-to-t from-purple-300 to-purple-400">
         {journal.title}
-      </h2>
+      </h1>
       <p className="italic my-4 mb-8">{formatDate(journal.createdAt)}</p>
       <JournalContent content={journal.content}></JournalContent>
     </article>
