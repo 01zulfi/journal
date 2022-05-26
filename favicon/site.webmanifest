@@ -4,7 +4,7 @@
     {
       "src": "/favicon/sticky-note.svg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/svg"
     }
   ],
   "theme_color": "#000000",
