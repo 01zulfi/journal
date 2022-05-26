@@ -19,8 +19,6 @@ const JournalsList: FC = function JournalsList() {
         setJournals(data.journals);
         setErrorMessage('');
         setIsLoading(false);
-        const date = new Date(data.journals.at(-1).createdAt);
-        console.log(date.toDateString());
         return;
       }
       setErrorMessage(data.message);
