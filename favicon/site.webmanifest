@@ -2,7 +2,7 @@
   "name": "zulfi's journal",
   "icons": [
     {
-      "src": "/favicon/sticky-note.png",
+      "src": "/favicon/sticky-note.svg",
       "sizes": "512x512",
       "type": "image/png"
     }
