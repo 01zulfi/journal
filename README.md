@@ -16,7 +16,7 @@ This is a three repository project, the other two are:
 - Utilize [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/)
 - Implement client side routing with [React Router](https://reactrouter.com/)
 - Parse markdown with [React Markdown](https://github.com/remarkjs/react-markdown)
-    - Get Raw HTML to parse via [Rehype Raw](https://github.com/rehypejs/rehype-raw) 
+    - Get raw HTML to parse via [Rehype Raw](https://github.com/rehypejs/rehype-raw) 
     - Get syntax highlighting via [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
 - Use [Tailwind](https://tailwindcss.com/) for styling
 
