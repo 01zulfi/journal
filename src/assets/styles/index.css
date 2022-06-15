@@ -817,6 +817,14 @@ html {
   border-radius: 0.25rem;
 }
 
+.journal-content hr {
+  --tw-border-opacity: 1;
+  border-color: rgb(143 155 168 / var(--tw-border-opacity));
+  opacity: 0.3;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .journal-content .highlight-box {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -826,7 +834,7 @@ html {
   border-color: rgb(143 155 168 / var(--tw-border-opacity));
   --tw-border-opacity: 1;
   border-left-color: rgb(128 255 234 / var(--tw-border-opacity));
-  background-color: rgba(255,255,255,0.04);
+  background-color: rgba(255,255,255,0.03);
   padding: 0.5rem;
   padding-left: 1rem;
 }

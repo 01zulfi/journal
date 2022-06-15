@@ -93,6 +93,10 @@
   @apply rounded my-7;
 }
 
+.journal-content hr {
+  @apply hr my-4
+}
+
 .journal-content .highlight-box {
-  @apply border border-fg-primary border-l-fg-cyan border-l-4 rounded p-2 pl-4 my-4 bg-[rgba(255,255,255,0.04)];
+  @apply border border-fg-primary border-l-fg-cyan border-l-4 rounded p-2 pl-4 my-4 bg-[rgba(255,255,255,0.03)];
 }
