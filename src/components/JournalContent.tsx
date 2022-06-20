@@ -16,6 +16,7 @@ const JournalContent: FC<JournalContentProps> = function JournalContent({
       <ReactMarkdown
         children={content}
         rehypePlugins={[rehypeRaw]}
+        linkTarget="_blank"
         components={{
           code({ node, inline, className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || '');
