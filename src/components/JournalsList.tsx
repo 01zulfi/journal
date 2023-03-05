@@ -3,6 +3,7 @@ import Loading from './Loading';
 import JournalInterface from '../interfaces/journal';
 import { Link } from 'react-router-dom';
 import formatDate from '../utils/format-date';
+import { endpoint } from '../endpoint.const';
 
 const JournalsList: FC = function JournalsList() {
   const [journals, setJournals] = useState<JournalInterface[]>([]);
@@ -11,9 +12,7 @@ const JournalsList: FC = function JournalsList() {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(
-        'https://journal-rest-api.herokuapp.com/published',
-      );
+      const response = await fetch(`${endpoint}/published`);
       const data = await response.json();
       if (response.status === 200) {
         setJournals(data.journals);

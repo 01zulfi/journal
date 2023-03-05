@@ -4,6 +4,7 @@ import JournalContent from './JournalContent';
 import { useParams } from 'react-router-dom';
 import formatDate from '../utils/format-date';
 import setWebpageTitle from '../utils/set-webpage-title';
+import { endpoint } from '../endpoint.const';
 
 const Journal: FC = function Journal() {
   const params = useParams();
@@ -13,9 +14,7 @@ const Journal: FC = function Journal() {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(
-        `https://journal-rest-api.herokuapp.com/published/${params.urlName}`,
-      );
+      const response = await fetch(`${endpoint}/published/${params.urlName}`);
       const data = await response.json();
 
       if (response.status === 200) {
